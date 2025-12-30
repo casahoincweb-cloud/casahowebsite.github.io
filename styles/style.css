@@ -1,0 +1,72 @@
+h1,h2,h3,h4,h5{
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+p{
+    font-family: "Quicksand", sans-serif;
+}
+.menu-nav{ 
+    padding: 20px 0 10px 0;    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/*
+.menu-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}*/
+
+.hero{
+    padding: 20px 0 40px 0;
+}
+
+.menu-nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+/* Group logo + hamburger */ 
+.left-group { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; }  
+
+/* Mobile */
+@media (max-width: 768px) { 
+    .menu-items { 
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background: #fff; 
+        padding: 15px 0; 
+    } 
+    .menu-items.show { 
+        display: flex; 
+    } 
+    .hamburger { 
+        display: block; 
+    } 
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 992px) { 
+}
+
+/* Desktop */
+@media (min-width: 993px) { 
+    .menu-items { 
+        display: flex; 
+        gap: 20px; } 
+        /* Hide hamburger on desktop */ 
+        .hamburger { 
+            display: none; 
+            font-size: 28px; 
+            background: none; 
+            border: none; 
+            cursor: pointer; 
+        }
+}
