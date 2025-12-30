@@ -28,7 +28,8 @@ p{
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-} 
+}  
+
 /* Group logo + hamburger */ 
 .left-group { 
     display: flex; 
@@ -60,13 +61,16 @@ p{
 @media (min-width: 993px) { 
     .menu-items { 
         display: flex; 
-        gap: 20px; } 
-        /* Hide hamburger on desktop */ 
-        .hamburger { 
-            display: none; 
-            font-size: 28px; 
-            background: none; 
-            border: none; 
-            cursor: pointer; 
-        }
+        gap: 20px; 
+        justify-content: end;
+        align-items: center;
+    }
+    /* Hide hamburger on desktop */ 
+    .hamburger { 
+        display: none; 
+        font-size: 28px; 
+        background: none; 
+        border: none; 
+        cursor: pointer; 
+    }
 }
