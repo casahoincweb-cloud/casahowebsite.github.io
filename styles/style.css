@@ -13,6 +13,10 @@ p{
     align-items: center;
 }
 
+.logo-size{
+    height: 200px;
+}
+
 /*
 .menu-items{
     display: flex;
